@@ -2,7 +2,7 @@
 
 A data analysis project simulating the work of an Inventory Management Analyst, built using Python, MySQL, and Tableau.
 
-**Dataset:** [Kaggle - DataCo Smart Supply Chain for Big Data Analysis](https://www.kaggle.com/datasets/shivamb/supply-chain-dataset)
+**Dataset:** [Kaggle - DataCo Smart Supply Chain for Big Data Analysis]([https://www.kaggle.com/datasets/shivamb/supply-chain-dataset](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis/data))
 
 ## Project Structure
 
