@@ -9,6 +9,7 @@ A data analysis project simulating the work of an Inventory Management Analyst, 
 | File | Description |
 |------|-------------|
 | `inventory_analysis.ipynb` | Data ingestion via Kaggle API, cleaning, preprocessing, and loading into MySQL |
+| `inventory_data_validation.sql` | Database setup, null checks, duplicate investigation, and distinct categorical values |
 | `inventory_analysis_queries.sql` | 5 core SQL analysis queries covering turnover, aging stock, demand trends, late delivery, and profitability |
 | `[Tableau workbook .twbx]` | Interactive dashboards connected directly to MySQL |
 
