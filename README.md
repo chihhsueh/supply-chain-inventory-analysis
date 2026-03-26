@@ -2,7 +2,7 @@
 
 A data analysis project simulating the work of an Inventory Management Analyst, built using Python, MySQL, and Tableau.
 
-**Dataset:** [Kaggle - DataCo Smart Supply Chain for Big Data Analysis]([https://www.kaggle.com/datasets/shivamb/supply-chain-dataset](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis/data))
+**Dataset:** [Kaggle - DataCo Smart Supply Chain for Big Data Analysis](https://www.kaggle.com/datasets/shivamb/supply-chain-dataset)
 
 ## Project Structure
 
@@ -11,7 +11,11 @@ A data analysis project simulating the work of an Inventory Management Analyst, 
 | `inventory_analysis.ipynb` | Data ingestion via Kaggle API, cleaning, preprocessing, and loading into MySQL |
 | `inventory_data_validation.sql` | Database setup, null checks, duplicate investigation, and distinct categorical values |
 | `inventory_analysis_queries.sql` | 5 core SQL analysis queries covering turnover, aging stock, demand trends, late delivery, and profitability |
-| `[Tableau workbook .twbx]` | Interactive dashboards connected directly to MySQL |
+| `dashboard_preview.png` | Screenshot of the Tableau dashboard |
+
+## Tableau Dashboard
+
+![Sporting Goods Supply Chain Performance Dashboard](dashboard_preview.png)
 
 ## Data Cleaning & Validation
 
@@ -46,7 +50,7 @@ A data analysis project simulating the work of an Inventory Management Analyst, 
 ## Key Findings
 
 - **Cleats** is the highest turnover category (32,181 units), while **Fishing** ranks 6th in volume but 2nd in total revenue ($3M) due to high price points per item
-- The 15 slowest moving products sold only 6–20 units over 3+ years, with Fitness Accessories, Hockey, and Basketball concentrated at the bottom
+- The 5 slowest moving products sold fewer than 7 units over 3+ years, signaling dead stock tying up capital with minimal return
 - Monthly demand is remarkably flat at 4,500–5,300 units per month from 2015 through mid-2017 with no meaningful seasonal spikes
 - **First Class shipping has a 92–100% late delivery rate** across nearly every region — the fastest promised option is consistently the least reliable
 - **Standard Class and Same Day** are the most reliable shipping modes at 28–43% and 20–56% late rates respectively
@@ -55,7 +59,7 @@ A data analysis project simulating the work of an Inventory Management Analyst, 
 ## Actionable Recommendations
 
 - **Reassess First Class and Second Class shipping contracts.** Late rates of 92–100% on First Class are unsustainable. Renegotiate carrier SLAs or deprioritize these options until reliability improves.
-- **Reduce stocking on bottom-15 products.** Items selling fewer than 20 units over 3+ years are tying up capital with minimal return. Flag for clearance or discontinuation.
+- **Reduce stocking on bottom products.** Items selling fewer than 7 units over 3+ years are tying up capital with minimal return. Flag for clearance or discontinuation.
 - **Protect high-margin niche categories.** Golf Bags & Carts, Basketball, and Hockey generate outsized margins relative to their size. Targeted inventory investment could improve overall profitability without requiring high volume.
 - **Investigate Fishing category pricing.** Fishing is the most profitable category by total profit despite mid-tier volume. Understanding its pricing premium could inform strategy across other categories.
 - **Audit low-margin categories.** Strength Training and Men's Clothing margins below 3% suggest pricing issues or discount overuse. A SKU-level review is warranted before continuing to stock these categories.
@@ -63,7 +67,7 @@ A data analysis project simulating the work of an Inventory Management Analyst, 
 ## Tools
 - Python (pandas, sqlalchemy, kagglehub)
 - MySQL 8.0 (MySQL Workbench)
-- Tableau
+- Tableau Public
 - Jupyter Notebook
 
 ## Roadblocks & Lessons Learned
